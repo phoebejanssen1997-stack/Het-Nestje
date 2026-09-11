@@ -21,6 +21,17 @@ const PRODUCTS = [
     badge: "Nieuw",
     description: "Een speelse appeltjesprint op een crèmekleurige teddystof — zacht tegen de huid en net dat beetje vrolijker dan een effen hoes. Vervangt de standaard bekleding van de Stokke Tripp Trapp Newborn Set.",
     details: ["100% teddy katoen", "Past op de Stokke Tripp Trapp Newborn Set", "Eenvoudig los te ritsen voor wasbeurt", "Machinewasbaar op 30°C"]
+  },
+  {
+    id: "newborn-set-jungle-tijger",
+    name: "Hoes Newborn Set Jungle Tijger",
+    category: "Hoezen newborn set",
+    price: 79,
+    image: "assets/images/newborn-set-jungle-tijger.jpeg",
+    tagline: "Katoen, junglenprint met tijgertjes",
+    badge: "Nieuw",
+    description: "Palmbomen en speelse tijgertjes in olijfgroen en oker op een crèmekleurige basis — een avontuurlijke print voor wie iets meer statement wil dan een effen hoes. Vervangt de standaard bekleding van de Stokke Tripp Trapp Newborn Set.",
+    details: ["100% katoen", "Past op de Stokke Tripp Trapp Newborn Set", "Eenvoudig los te ritsen voor wasbeurt", "Machinewasbaar op 30°C"]
   }
 ];
 
