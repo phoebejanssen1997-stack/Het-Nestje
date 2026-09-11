@@ -29,9 +29,28 @@
 
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Archivo',sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Archivo',sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+    cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ctext y='24' font-size='24'%3E%F0%9F%8C%99%3C/text%3E%3C/svg%3E") 6 4, auto;
+  }
+
+  /* ---------- Sterrenhemel-scrollbar ---------- */
+  html{scrollbar-width:thin; scrollbar-color:var(--ink) var(--cream);}
+  ::-webkit-scrollbar{width:14px; height:14px;}
+  ::-webkit-scrollbar-track{background:var(--cream);}
+  ::-webkit-scrollbar-thumb{
+    background-color:var(--ink);
+    background-image:
+      radial-gradient(1.6px 1.6px at 4px 8px, var(--cream) 45%, transparent 46%),
+      radial-gradient(1.2px 1.2px at 10px 18px, var(--cream) 45%, transparent 46%),
+      radial-gradient(1.2px 1.2px at 6px 28px, var(--cream) 45%, transparent 46%),
+      radial-gradient(1.6px 1.6px at 9px 36px, var(--cream) 45%, transparent 46%);
+    background-repeat:repeat-y;
+    border-radius:999px;
+    border:3px solid var(--cream);
+  }
+  ::-webkit-scrollbar-thumb:hover{background-color:var(--ochre-deep);}
   img{max-width:100%; display:block;}
-  a{color:inherit;}
+  a{color:inherit; cursor:pointer;}
   .wrap{max-width:1220px; margin:0 auto; padding:0 32px;}
   h1,h2,h3{font-family:'Fraunces',serif; font-weight:500; line-height:1.14; margin:0; letter-spacing:-0.01em;}
   p{margin:0;}
