@@ -113,7 +113,7 @@
   .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line);}
   .hero-scene{
     aspect-ratio:16/8; min-height:420px;
-    background:url("../assets/images/hero-woonkamer-vintage.jpg") center/cover no-repeat;
+    background:url("../assets/images/hero-babykamer-ochtendlicht.jpg") center/cover no-repeat;
     position:relative;
   }
   .hero-overlay{
