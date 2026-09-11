@@ -5,7 +5,7 @@ const PRODUCTS = [
     name: "Hoes Newborn Set Ruit Blauw-Mint",
     category: "Hoezen newborn set",
     price: 79,
-    image: "assets/images/newborn-set-seersucker-blauw-mint.png",
+    image: "assets/images/newborn-set-seersucker-blauw-mint.jpeg",
     tagline: "Seersucker, ruit blauw-mint",
     badge: "Nieuw",
     description: "Een frisse ruit in blauw en mint, geweven in licht gekreukt seersucker. Deze hoes vervangt de standaard bekleding van de Stokke Tripp Trapp Newborn Set en geeft 'm meteen een plek in je woonkamer in plaats van alleen de kinderkamer.",
