@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winkelmand — Het Nestje</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce">Handgemaakt in kleine oplage · Verzonden binnen 1–3 werkdagen</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">Het Nestje</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="shop.html">Alle producten</a></li>
+        <li class="nav-item"><a href="shop.html?cat=Kussens">Kussens</a></li>
+        <li class="nav-item"><a href="shop.html?cat=Plaids%20%26%20tafeltextiel">Plaids &amp; tafeltextiel</a></li>
+        <li class="nav-item"><a href="shop.html?cat=Cadeausets">Cadeausets</a></li>
+        <li class="nav-item"><a href="index.html#verhaal">Ons verhaal</a></li>
+        <li class="nav-item"><a href="index.html#nieuwsbrief">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" aria-label="Winkelmand" data-cart-open>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h7.2a2 2 0 0 0 2-1.6L21 9H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h1 style="font-style:italic; font-size:clamp(28px,3.6vw,40px); margin-bottom:32px;">Jouw winkelmand</h1>
+
+      <div class="cart-page-empty" id="cpEmpty" hidden>
+        <p>Je winkelmand is nog leeg.</p>
+        <a href="shop.html" class="btn btn-primary">Bekijk de collectie</a>
+      </div>
+
+      <div class="cart-page-grid">
+        <div class="cp-lines" id="cpBody"></div>
+        <aside class="cp-summary" id="cpSummary">
+          <h2>Overzicht</h2>
+          <div class="co-row"><span>Subtotaal</span><strong id="cpSubtotal">€0</strong></div>
+          <div class="co-row"><span>Verzending</span><strong id="cpShipping">€0</strong></div>
+          <div class="co-row co-row-total"><span>Totaal</span><strong id="cpTotal">€0</strong></div>
+          <a href="checkout.html" class="btn btn-primary cart-checkout-btn">Naar de kassa →</a>
+          <a href="shop.html" class="cart-view-link">Verder winkelen</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Het Nestje</span>
+      <span>Placeholdertekst — merknaam, prijzen en logistiek nog aan te vullen</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/cart-page.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afrekenen — Het Nestje</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">Het Nestje</a>
+    <p style="font-size:14px; color:var(--ink-soft); font-weight:600;">🔒 Veilig afrekenen</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+
+      <div class="co-empty" id="coEmpty" hidden>
+        <p>Je winkelmand is leeg — er valt niets af te rekenen.</p>
+        <a href="shop.html" class="btn btn-primary">Bekijk de collectie</a>
+      </div>
+
+      <div class="checkout-grid" id="coFormSection">
+        <form class="checkout-form" id="coForm">
+          <h2>Contactgegevens</h2>
+          <label>E-mailadres
+            <input type="email" required placeholder="jouw@email.nl">
+          </label>
+
+          <h2>Verzendadres</h2>
+          <div class="form-row">
+            <label>Voornaam <input type="text" required></label>
+            <label>Achternaam <input type="text" required></label>
+          </div>
+          <label>Adres <input type="text" required placeholder="Straat en huisnummer"></label>
+          <div class="form-row">
+            <label>Postcode <input type="text" required></label>
+            <label>Plaats <input type="text" required></label>
+          </div>
+          <label>Land
+            <select required>
+              <option>Nederland</option>
+              <option>België</option>
+            </select>
+          </label>
+
+          <h2>Betaalmethode</h2>
+          <div class="pay-methods">
+            <label class="pay-method"><input type="radio" name="pay" checked> iDEAL</label>
+            <label class="pay-method"><input type="radio" name="pay"> Bancontact</label>
+            <label class="pay-method"><input type="radio" name="pay"> Creditcard</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-add-large">Plaats bestelling — <span id="coSubmitTotal">€0</span></button>
+        </form>
+
+        <aside class="co-summary">
+          <h2>Jouw bestelling</h2>
+          <div id="coLines"></div>
+          <div class="co-row"><span>Subtotaal</span><strong id="coSubtotal">€0</strong></div>
+          <div class="co-row"><span>Verzending</span><strong id="coShipping">€0</strong></div>
+          <div class="co-row co-row-total"><span>Totaal</span><strong id="coTotal">€0</strong></div>
+        </aside>
+      </div>
+
+      <div class="co-confirmation" id="coConfirmation" hidden>
+        <div class="co-confirmation-icon">✓</div>
+        <h1>Bedankt voor je bestelling!</h1>
+        <p>Ordernummer <strong id="coOrderNumber"></strong> — totaal <strong id="coOrderTotal"></strong>.</p>
+        <p>Je ontvangt zo een bevestiging per e-mail.</p>
+        <a href="shop.html" class="btn btn-primary">Verder winkelen</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Het Nestje</span>
+      <span>Placeholdertekst — merknaam, prijzen en logistiek nog aan te vullen</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Het Nestje — hoezen voor de Stokke Tripp Trapp Newborn Set</title>
+<title>Het Nestje — handgemaakte woontextiel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,27 +15,22 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="logo">Het Nestje</a>
+    <a href="index.html" class="logo">Het Nestje</a>
     <nav>
       <ul class="nav-links" id="navLinks">
-        <li class="nav-item">
-          <a href="#collectie">Collectie</a>
-          <div class="dropdown">
-            <a href="#collectie">Alle prints</a>
-            <a href="#modellen">Oud model newborn set</a>
-            <a href="#modellen">Nieuw model newborn set</a>
-          </div>
-        </li>
-        <li class="nav-item"><a href="#stoffen">Onze stoffen</a></li>
-        <li class="nav-item"><a href="#verhaal">Ons verhaal</a></li>
-        <li class="nav-item"><a href="#nieuwsbrief">Contact</a></li>
+        <li class="nav-item"><a href="shop.html">Alle producten</a></li>
+        <li class="nav-item"><a href="shop.html?cat=Kussens">Kussens</a></li>
+        <li class="nav-item"><a href="shop.html?cat=Plaids%20%26%20tafeltextiel">Plaids &amp; tafeltextiel</a></li>
+        <li class="nav-item"><a href="shop.html?cat=Cadeausets">Cadeausets</a></li>
+        <li class="nav-item"><a href="index.html#verhaal">Ons verhaal</a></li>
+        <li class="nav-item"><a href="index.html#nieuwsbrief">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-right">
       <button class="icon-btn" aria-label="Zoeken">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
       </button>
-      <button class="icon-btn" aria-label="Winkelmand, 0 items">
+      <button class="icon-btn" aria-label="Winkelmand" data-cart-open>
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h7.2a2 2 0 0 0 2-1.6L21 9H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
         <span class="cart-count">0</span>
       </button>
@@ -48,78 +43,33 @@
 
 <main id="top">
 
-  <!-- HERO: full-bleed banner, Donsje-style -->
+  <!-- HERO: full-bleed banner -->
   <section class="hero" style="padding:0;">
     <div class="hero-scene">
       <div class="hero-overlay">
-        <p class="hero-eyebrow">DE STOKKE-COLLECTIE</p>
-        <h1>Een hoes zo bijzonder als je stoel.</h1>
+        <p class="hero-eyebrow">HANDGEMAAKT WOONTEXTIEL</p>
+        <h1>Kleine details, een warmer thuis.</h1>
         <div class="hero-cta">
-          <a href="#collectie" class="btn btn-primary">Shop de collectie</a>
-          <a href="#verhaal" class="btn btn-ghost btn-on-ink">Ons verhaal</a>
+          <a href="shop.html" class="btn btn-primary">Shop alle producten</a>
+          <a href="index.html#verhaal" class="btn btn-ghost btn-on-ink">Ons verhaal</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NIEUW BINNEN: product row -->
+  <!-- NIEUW BINNEN: dynamische productgrid -->
   <section id="collectie">
     <div class="wrap">
       <div class="section-head">
         <div>
           <h2>Nieuw binnen</h2>
-          <p>Compatibel met de Stokke Tripp Trapp Newborn Set — oud en nieuw model. Direct leverbaar.</p>
+          <p>Losse artikelen, elk met een eigen productpagina. Direct leverbaar.</p>
         </div>
-        <a href="#" class="section-link">Bekijk alles
+        <a href="shop.html" class="section-link">Bekijk alles
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
-      <div class="product-row">
-        <article class="product-card">
-          <div class="swatch swatch-stripe"></div>
-          <div class="product-body">
-            <h3>Streep Terracotta</h3>
-            <p>Bouclé, rood-crème streep</p>
-            <div class="product-foot">
-              <span class="price">€79</span>
-              <button class="add-btn">+ Mand</button>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="swatch swatch-gingham"></div>
-          <div class="product-body">
-            <h3>Ruit Zand</h3>
-            <p>Corduroy, fijne ruit zand-roest</p>
-            <div class="product-foot">
-              <span class="price">€79</span>
-              <button class="add-btn">+ Mand</button>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="swatch swatch-waffle"></div>
-          <div class="product-body">
-            <h3>Wafel Oker</h3>
-            <p>Wafelkatoen, okergeel</p>
-            <div class="product-foot">
-              <span class="price">€79</span>
-              <button class="add-btn">+ Mand</button>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="swatch swatch-cord"></div>
-          <div class="product-body">
-            <h3>Rib Karamel</h3>
-            <p>Corduroy, egaal karamel</p>
-            <div class="product-foot">
-              <span class="price">€79</span>
-              <button class="add-btn">+ Mand</button>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="product-row" data-shop="featured"></div>
     </div>
   </section>
 
@@ -128,15 +78,15 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2>Blader per model</h2>
-          <p>Twijfel je welk model je hebt? Check je newborn set of bekijk direct per stijl.</p>
+          <h2>Shop per categorie</h2>
+          <p>Van kussenhoezen tot cadeausets — vind snel wat je zoekt.</p>
         </div>
       </div>
       <div class="tile-grid">
-        <a href="#" class="tile tile-a"><span class="tile-label">Gestreepte prints</span></a>
-        <a href="#" class="tile tile-b"><span class="tile-label">Geruite prints</span></a>
-        <a href="#" class="tile tile-c"><span class="tile-label">Effen &amp; rib</span></a>
-        <a href="#" class="tile tile-d"><span class="tile-label">Cadeauset</span></a>
+        <a href="shop.html?cat=Kussens" class="tile tile-a"><span class="tile-label">Kussens</span></a>
+        <a href="shop.html?cat=Plaids%20%26%20tafeltextiel" class="tile tile-b"><span class="tile-label">Plaids &amp; tafeltextiel</span></a>
+        <a href="shop.html?cat=Opbergen" class="tile tile-c"><span class="tile-label">Opbergen</span></a>
+        <a href="shop.html?cat=Cadeausets" class="tile tile-d"><span class="tile-label">Cadeausets</span></a>
       </div>
     </div>
   </section>
@@ -148,9 +98,9 @@
         <div class="feature-art swatch-stripe"></div>
         <div class="feature-copy">
           <p class="feature-eyebrow">IN DE KIJKER</p>
-          <h3>Streep Terracotta</h3>
-          <p>Onze meest gekozen print: een rood-crème streep in bouclé, geïnspireerd op de gestreepte baldakijn boven een echte kinderkamer. Een rustige basis met precies één gedurfd accent.</p>
-          <a href="#" class="btn btn-primary">Bekijk dit product</a>
+          <h3>Kussenhoes Streep Terracotta</h3>
+          <p>Onze meest gekozen print: een rood-crème streep in bouclé, geïnspireerd op een gestreepte baldakijn boven een echte kinderkamer. Een rustige basis met precies één gedurfd accent.</p>
+          <a href="product.html?id=streep-terracotta" class="btn btn-primary">Bekijk dit product</a>
         </div>
       </div>
     </div>
@@ -164,8 +114,8 @@
         <div class="feature-copy">
           <p class="feature-eyebrow">ONZE STOFFEN</p>
           <h3>Natuurlijke materialen, met structuur</h3>
-          <p>Bouclé, corduroy, wafelkatoen — we kiezen bewust voor stoffen die je kunt voelen. Geen gladde synthetische prints, maar textuur die de kinderkamer warmte geeft.</p>
-          <a href="#" class="btn btn-primary">Lees over onze stoffen</a>
+          <p>Bouclé, corduroy, wafelkatoen — we kiezen bewust voor stoffen die je kunt voelen. Geen gladde synthetische prints, maar textuur die je huis warmte geeft.</p>
+          <a href="shop.html" class="btn btn-primary">Bekijk de collectie</a>
         </div>
       </div>
     </div>
@@ -180,23 +130,23 @@
         </div>
       </div>
       <div class="brand-tiles">
-        <a href="#" class="brand-tile">
+        <a href="index.html#verhaal" class="brand-tile">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9z"/></svg>
           <span>Ons verhaal</span>
         </a>
-        <a href="#" class="brand-tile">
+        <a href="shop.html" class="brand-tile">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-          <span>Kleurenkaart</span>
+          <span>Alle producten</span>
         </a>
-        <a href="#" class="brand-tile">
+        <a href="shop.html?cat=Cadeausets" class="brand-tile">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7c-2-4-8-3-8 0s6 4 8 0z"/><path d="M12 7c2-4 8-3 8 0s-6 4-8 0z"/></svg>
           <span>Cadeauverpakking</span>
         </a>
-        <a href="#" class="brand-tile">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12l-6 6-3-3"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>
-          <span>Klantfoto's</span>
+        <a href="cart.html" class="brand-tile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h7.2a2 2 0 0 0 2-1.6L21 9H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+          <span>Winkelmand</span>
         </a>
-        <a href="#nieuwsbrief" class="brand-tile">
+        <a href="index.html#nieuwsbrief" class="brand-tile">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
           <span>Contact</span>
         </a>
@@ -210,8 +160,8 @@
       <div class="statement-art"></div>
       <div>
         <h2>Handgemaakt, met aandacht voor materiaal</h2>
-        <p>Elke hoes wordt in kleine oplage genaaid, met keuzes die verder gaan dan alleen esthetiek: natuurlijke vezels, zorgvuldige afwerking en materialen die meegaan met je kindje.</p>
-        <a href="#" class="btn btn-primary">Lees meer</a>
+        <p>Elk artikel wordt in kleine oplage genaaid, met keuzes die verder gaan dan alleen esthetiek: natuurlijke vezels, zorgvuldige afwerking en materialen die meegaan.</p>
+        <a href="shop.html" class="btn btn-primary">Bekijk de collectie</a>
       </div>
     </div>
   </section>
@@ -220,7 +170,7 @@
   <section class="on-surface" id="nieuwsbrief">
     <div class="wrap newsletter-inner">
       <div>
-        <h2 class="newsletter">Als eerste weten wanneer nieuwe prints binnen zijn?</h2>
+        <h2 class="newsletter">Als eerste weten wanneer nieuwe producten binnen zijn?</h2>
         <p>Meld je aan en ontvang 10% korting op je eerste bestelling.</p>
       </div>
       <form class="newsletter-form" onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').textContent='Bedankt!';">
@@ -259,8 +209,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#top" class="logo">Het Nestje</a>
-        <p>Hoezen voor de Stokke Tripp Trapp Newborn Set, handgemaakt met natuurlijke stoffen en kleuren met karakter.</p>
+        <a href="index.html" class="logo">Het Nestje</a>
+        <p>Handgemaakt woontextiel met natuurlijke stoffen en kleuren met karakter.</p>
         <div class="footer-social">
           <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
           <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 17c1-3 1.5-6 1.5-8a2.5 2.5 0 0 1 5 0c0 1.5-1 4-2.5 4"/></svg></a>
@@ -269,17 +219,17 @@
       <div class="footer-col">
         <h4>WINKEL</h4>
         <ul>
-          <li><a href="#collectie">Streep Terracotta</a></li>
-          <li><a href="#collectie">Ruit Zand</a></li>
-          <li><a href="#collectie">Wafel Oker</a></li>
-          <li><a href="#collectie">Rib Karamel</a></li>
+          <li><a href="shop.html?cat=Kussens">Kussens</a></li>
+          <li><a href="shop.html?cat=Plaids%20%26%20tafeltextiel">Plaids &amp; tafeltextiel</a></li>
+          <li><a href="shop.html?cat=Opbergen">Opbergen</a></li>
+          <li><a href="shop.html?cat=Cadeausets">Cadeausets</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>OVER HET NESTJE</h4>
         <ul>
-          <li><a href="#verhaal">Ons verhaal</a></li>
-          <li><a href="#stoffen">Onze stoffen</a></li>
+          <li><a href="index.html#verhaal">Ons verhaal</a></li>
+          <li><a href="index.html#stoffen">Onze stoffen</a></li>
           <li><a href="#">Veelgestelde vragen</a></li>
           <li><a href="#">Verzending &amp; retour</a></li>
         </ul>
@@ -300,6 +250,9 @@
   </div>
 </footer>
 
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
 <script src="js/main.js"></script>
 
 </body>
