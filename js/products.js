@@ -74,6 +74,27 @@ const PRODUCTS = [
     details: ["Set van 2 hoezen", "Materiaalmix bouclé & wafelkatoen", "40 × 40 cm — vulling niet inbegrepen", "Machinewasbaar op 30°C"]
   },
   {
+    id: "newborn-set-seersucker-blauw-mint",
+    name: "Hoes Newborn Set Ruit Blauw-Mint",
+    category: "Newborn set hoezen",
+    price: 79,
+    image: "assets/images/newborn-set-seersucker-blauw-mint.png",
+    tagline: "Seersucker, ruit blauw-mint",
+    badge: "Nieuw",
+    description: "Een frisse ruit in blauw en mint, geweven in licht gekreukt seersucker. Deze hoes vervangt de standaard bekleding van de Stokke Tripp Trapp Newborn Set en geeft 'm meteen een plek in je woonkamer in plaats van alleen de kinderkamer.",
+    details: ["100% seersucker katoen", "Past op de Stokke Tripp Trapp Newborn Set", "Eenvoudig los te ritsen voor wasbeurt", "Machinewasbaar op 30°C"]
+  },
+  {
+    id: "newborn-set-teddy-appeltjes",
+    name: "Hoes Newborn Set Appeltjes",
+    category: "Newborn set hoezen",
+    price: 79,
+    image: "assets/images/newborn-set-teddy-appeltjes.png",
+    tagline: "Teddystof, appeltjesprint crème",
+    description: "Een speelse appeltjesprint op een crèmekleurige teddystof — zacht tegen de huid en net dat beetje vrolijker dan een effen hoes. Vervangt de standaard bekleding van de Stokke Tripp Trapp Newborn Set.",
+    details: ["100% teddy katoen", "Past op de Stokke Tripp Trapp Newborn Set", "Eenvoudig los te ritsen voor wasbeurt", "Machinewasbaar op 30°C"]
+  },
+  {
     id: "cadeauset-het-nestje",
     name: "Cadeauset 'Het Nestje'",
     category: "Cadeausets",
@@ -92,4 +113,10 @@ function hnFormatPrice(amount) {
 
 function hnGetProduct(id) {
   return PRODUCTS.find(p => p.id === id);
+}
+
+function hnMediaHTML(product, cls) {
+  return product.image
+    ? `<div class="${cls}"><img src="${product.image}" alt="${product.name}"></div>`
+    : `<div class="${cls} ${product.swatch}"></div>`;
 }

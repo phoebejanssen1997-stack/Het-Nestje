@@ -17,7 +17,7 @@
 
     list.innerHTML = lines.map(l => `
       <div class="co-line">
-        <div class="co-line-media ${l.product.swatch}"></div>
+        ${hnMediaHTML(l.product, "co-line-media")}
         <div class="co-line-body">
           <p>${l.product.name}</p>
           <span>${l.qty} × ${hnFormatPrice(l.product.price)}</span>

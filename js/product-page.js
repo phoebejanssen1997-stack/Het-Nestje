@@ -13,7 +13,14 @@
 
     document.getElementById("pdBreadcrumbCat").textContent = product.category;
     document.getElementById("pdBreadcrumbName").textContent = product.name;
-    document.getElementById("pdMedia").className = "product-detail-media swatch " + product.swatch;
+    const media = document.getElementById("pdMedia");
+    if (product.image) {
+      media.className = "product-detail-media";
+      media.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+    } else {
+      media.className = "product-detail-media swatch " + product.swatch;
+      media.innerHTML = "";
+    }
     if (product.badge) {
       document.getElementById("pdBadge").textContent = product.badge;
       document.getElementById("pdBadge").hidden = false;

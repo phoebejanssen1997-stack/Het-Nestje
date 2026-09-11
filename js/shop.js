@@ -4,7 +4,7 @@ function hnProductCardHTML(p) {
     <article class="product-card">
       <a href="product.html?id=${p.id}" class="product-media-link">
         <div class="product-media">
-          <div class="swatch ${p.swatch}"></div>
+          ${p.image ? `<img src="${p.image}" alt="${p.name}" loading="lazy">` : `<div class="swatch ${p.swatch}"></div>`}
           ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ""}
           <button class="quick-add" data-add-to-cart="${p.id}" aria-label="Snel toevoegen aan mand">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h7.2a2 2 0 0 0 2-1.6L21 9H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>

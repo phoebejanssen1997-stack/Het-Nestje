@@ -17,7 +17,7 @@
 
     body.innerHTML = lines.map(l => `
       <div class="cp-line">
-        <div class="cp-line-media ${l.product.swatch}"></div>
+        ${hnMediaHTML(l.product, "cp-line-media")}
         <div class="cp-line-body">
           <h3><a href="product.html?id=${l.id}">${l.product.name}</a></h3>
           <p>${l.product.tagline}</p>

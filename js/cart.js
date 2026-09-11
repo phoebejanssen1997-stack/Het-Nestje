@@ -147,7 +147,7 @@ const HnCart = {
   function cartLineHTML(l) {
     return `
       <div class="cart-line" data-line="${l.id}">
-        <div class="cart-line-media ${l.product.swatch}"></div>
+        ${hnMediaHTML(l.product, "cart-line-media")}
         <div class="cart-line-body">
           <p class="cart-line-name">${l.product.name}</p>
           <p class="cart-line-price">${hnFormatPrice(l.product.price)}</p>
@@ -175,7 +175,7 @@ const HnCart = {
 
   function showToast(product) {
     const toast = document.getElementById("hnToast");
-    toast.innerHTML = `<div class="toast-media ${product.swatch}"></div>
+    toast.innerHTML = `${hnMediaHTML(product, "toast-media")}
       <div><strong>Toegevoegd aan mand</strong><span>${product.name}</span></div>`;
     toast.classList.add("show");
     clearTimeout(toast._timer);
