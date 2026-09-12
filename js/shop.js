@@ -23,7 +23,9 @@ function hnProductCardHTML(p) {
 }
 
 function hnRenderGrid(container, list) {
-  container.innerHTML = list.map(hnProductCardHTML).join("");
+  container.innerHTML = list.length
+    ? list.map(hnProductCardHTML).join("")
+    : `<p class="empty-category">Binnenkort beschikbaar in deze categorie.</p>`;
 }
 
 function hnRenderShopGrids() {

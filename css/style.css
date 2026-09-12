@@ -142,6 +142,7 @@
 
   /* ---------- Product row ---------- */
   .product-row{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
+  .empty-category{grid-column:1/-1; padding:48px 0; text-align:center; color:var(--ink-soft); font-size:15px;}
   .product-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; display:flex; flex-direction:column; transition:transform .2s ease, box-shadow .2s ease;}
   .product-card:hover{transform:translateY(-4px); box-shadow:var(--shadow);}
   .swatch{aspect-ratio:4/5; width:100%;}
